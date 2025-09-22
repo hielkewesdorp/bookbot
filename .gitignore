@@ -1,2 +1,5 @@
 pycache/
+*.pyd
+*.pyc
+*.pyo
 /books
