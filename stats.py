@@ -33,7 +33,17 @@ def character_counter(book_filepath):
     #print(letter_dictionary)
     return letter_dictionary
 
-
+def character_sorter(dictionary1):
+    list_of_dictionaries = []
+    
+    for entries in dictionary1:
+        list_of_dictionaries.append({"char": entries, "num": dictionary1[entries]}) 
+    #print(list_of_dictionaries)
+    def num_of_char(item): #helper function for sort()
+        return item["num"]
+    list_of_dictionaries.sort(reverse=True, key=num_of_char)
+    return list_of_dictionaries
+    
 
 
 
